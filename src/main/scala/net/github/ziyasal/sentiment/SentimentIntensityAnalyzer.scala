@@ -338,7 +338,7 @@ class SentimentIntensityAnalyzer {
   private def roundWithDecimalPlaces(value: Double, decPlaces: Int): Double = {
     decPlaces match {
       case 1 => (value * 10).round / 10.toDouble
-      case 1 => (value * 100).round / 100.toDouble
+      case 2 => (value * 100).round / 100.toDouble
       case 3 => (value * 1000).round / 1000.toDouble
       case 4 => (value * 10000).round / 10000.toDouble
     }
