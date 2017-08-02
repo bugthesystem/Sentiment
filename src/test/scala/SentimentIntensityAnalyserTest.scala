@@ -3,9 +3,7 @@ import net.github.ziyasal.sentiment.SentimentIntensityAnalyzer
 
 class SentimentIntensityAnalyserTest extends FlatSpec with Matchers {
 
-  "A analyser" should "match" in {
-
-
+  "A SentimentIntensityAnalyzer" should "calculate polarity scores" in {
     val analyzer = new SentimentIntensityAnalyzer
 
     val standardGoodTest = analyzer.polarityScores("VADER is smart, handsome, and funny.")
